@@ -1,58 +1,44 @@
 #include <stdio.h>
+// #include <conio.h>
 void main()
 {
   int limit, i, j;
+  // clrscr();
   printf("Enter the limit: ");
   scanf("%d", &limit);
-  printf("Prime numbers up to %d are:\n", limit);
+  printf("Prime numbers are:\n");
   
-  //i Is The Counter Variable
   for (i = 2; i <= limit; i++)
    {
-    //Assume i Is Prime
-    int prime = 1;
-    for (j = 2; j < i; j++)
+    for (j = 2; j <= i/2; j++)
         {
          if (i % j == 0)
            {
-            prime = 0;
             break;
            }
         }
 
-    if (prime)
+    if (j>i/2)
         {
          printf("%d\n", i);
         }
    }
+  // getch();
 }
 
 /*
 Algorithm:
 
 Step 1: Start
-Step 2: Declare limit,i ,j as integers
-Step 3: Print "Enter the limit: "
-Step 4: Scan limit
-Step 5: Print "Prime Numbers are: "
-Step 6: Start a for loop with condition (i=2; i<=limit: i++)
-Step 7: Inside the for loop, define variable prime=1
-Step 8: Start another for loop with condition (j=2; j<i;  j++)
-Step 9: Inside the inner for loop, check if i is divisible by j using if statement
-Step 10: If yes, set prime variable to 0 and break the inner loop
-Step 11: After the inner for loop, check if is_prime is still equal to 1 using if statement
-Step 12: If prime is still equal to 1, then print the value of i
-Step 13: End the inner for loop
-Step 14: End the outer for loop
-Step 15: Stop
-*/
-
-
-/*
-Explanation:
-
->In the main function, we ask the user for the limit, then use a for loop to iterate from 2 to the limit.
->For each number i, we set a variable prime to 1, assuming that the number is prime.
->Then, we use another for loop to iterate from 2 to i-1, checking if i is divisible by any of the numbers in the range. If it is, we set prime to 0 and break out of the inner loop.
->Finally, if prime is still 1 after the inner loop, we print the number i, since it is a prime number.
+Step 2: Declare variables limit,i ,j
+Step 3: Read value for limit
+Step 4: i=2
+Step 5: If i=limit, go to step 6, otherwise go to step 12
+Step 6: j=2
+Step 7: If j<=i/2, go to step 8 else go to step 9
+Step 8: If i%j==0, break, else i++ go to step 7
+Step 9: If j>i/2, go to step 10 else go to step 11
+Step 10: Display i
+Step 11: i++ go to step 5
+Step 12: Stop
 */

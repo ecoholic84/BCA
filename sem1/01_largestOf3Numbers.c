@@ -1,7 +1,9 @@
 #include <stdio.h>
+// #include <conio.h>
 void main()
 {
  int a,b,c;
+ // clrscr();
  printf("Enter three values: ");
  scanf("%d%d%d",&a,&b,&c);
 
@@ -26,21 +28,20 @@ void main()
   {
     printf("%d is the greatest.",c);
   }
-}
+ }
+ // getch();
 }
 
-/*Algorithm:
+/*
+Algorithm:
 
 Step 1: Start
-Step 2: Declare a,b,c
-Step 3: Print "Enter three values:"
-Step 4: Read a,b,c
-Step 5: Check if a>b
-Step 6: If yes, check if a>c
-Step 7: If yes, print 'a' is greatest
-Step 8: If a is not greater than c, print c is the greatest
-Step 9: If a is not greater than b, check if b > c
-Step 10: If yes, print b is the greatest.
-Step 11: If b is not greater than c, print c is the greatest.
-Step 12: Stop
+Step 2: Declare variables a,b,c
+Step 3: Read values for a,b,c
+Step 4: Check if a>b, then go to step 5 otherwise go to step 6
+Step 5: Check if a>c, then display "a is greatest" otherwise display "c is greatest"
+Step 6: Chcek if b>c, then go to step 7, otherwise go to step 8
+Step 7: Display "b is greatest"
+Step 8: Display "c is greatest"
+Step 9: Stop
 */
