@@ -10,7 +10,7 @@ void main()
     printf("2. Subtraction \n");
     printf("3. Multiplication \n");
     printf("4. Division \n");
-    printf("5. Reminder \n");
+    printf("5. Remainder \n");
     printf("Enter your choice: ");
     scanf("%d", &choice);
     printf("\nEnter two values: ");
@@ -20,23 +20,23 @@ void main()
     {
     case 1:
         c=a+b;
-        printf("The sum is: %d\n",c);
+        printf("The sum is %d\n",c);
         break;
     case 2:
         c=a-b;
-        printf("The difference is: %d\n",c);
+        printf("The difference is %d\n",c);
         break;
     case 3:
         c=a*b;
-        printf("The product is: %d\n",c);
+        printf("The product is %d\n",c);
         break;
     case 4:
         c=a/b;
-        printf("The quotient is: %d\n",c);
+        printf("The quotient is %d\n",c);
         break;
     case 5:
         c=a%b;
-        printf("The reminder is: %d\n",c);
+        printf("The remainder is %d\n",c);
         break;
     default:
         printf("\nInvalid choice.\a");
@@ -49,7 +49,7 @@ Algorithm:
 
 Step 1: Start
 Step 2: Declare variables a,b,c,choice
-Step 3: Print menu including addition, subtraction, multiplication, division and reminder
+Step 3: Print menu including addition, subtraction, multiplication, division and remainder
 Step 4: Read a and b
 Step 5: Read choice
 Step 6: Check choice

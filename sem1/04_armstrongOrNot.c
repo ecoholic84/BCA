@@ -38,6 +38,6 @@ Step 5: Repeat steps 6 to 8 while n!=0
 Step 6: r=n%10
 Step 7: result=result+(r*r*r)
 Step 8: n=n/10
-Step 9: If, result == num, print its a armstrong number, otherwise print its not a armstrong number
+Step 9: If result == num, print its a armstrong number, otherwise print its not a armstrong number
 Step 10: Stop
 */

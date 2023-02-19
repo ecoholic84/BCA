@@ -27,7 +27,7 @@ void main()
 Step 1: Start
 Step 2: Declare variables a,b,c,x1,x2
 Step 3: Read values for a,b,c
-Step 4: Check if b^2 > 4*a*c, then go to step 5 otherwise go to step 7
+Step 4: If b^2 > 4*a*c, then go to step 5 otherwise go to step 7
 Step 5: Calculate x1 and x2 using:
 x1 = -b + sqrt(b^2-4ac)/2a
 x2 = -b - sqrt(b^2-4ac)/2a
