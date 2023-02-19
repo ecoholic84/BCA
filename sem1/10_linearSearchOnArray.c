@@ -13,6 +13,7 @@ void main()
     for(i=0; i<n; i++)
     {
         scanf("%d",&a[i]);
+    }
         printf("Enter number to find: ");
         scanf("%d",&e);
         for(i=0; i<n; i++)
@@ -27,7 +28,6 @@ void main()
         {
             printf("%d is not found",e);
         }
-    }
   // getch();
 }
 
