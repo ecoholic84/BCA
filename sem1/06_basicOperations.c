@@ -39,7 +39,7 @@ void main()
         printf("The remainder is %d\n",c);
         break;
     default:
-        printf("\nInvalid choice.\a");
+        printf("\nInvalid choice.");
     }
    // getch();
 }
