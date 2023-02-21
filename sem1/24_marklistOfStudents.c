@@ -20,7 +20,6 @@ void main()
     scanf("%d",&n);
 
     struct Student s[n];
-    float p;
     // clrscr();
 
     for (i = 0; i < n; i++)
