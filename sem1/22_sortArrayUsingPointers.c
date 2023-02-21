@@ -17,7 +17,7 @@ void sort(int *a, int n)
     }
 }
 
-int main()
+void main()
 {
     int num;
     // clrscr();

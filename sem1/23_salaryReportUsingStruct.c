@@ -6,12 +6,12 @@
         int id;
         float salary;
         float bonus;
+        float total;
     };
 
     void main()
     {
         struct Employee emp;
-        float t;
         // clrscr();
         printf("Enter the employee name: ");
         scanf("%s",emp.name);
@@ -21,12 +21,10 @@
         scanf("%f",&emp.salary);
         printf("Enter the employee bonus: ");
         scanf("%f",&emp.bonus);
-
-        t = emp.salary + emp.bonus;
-
+        emp.total = emp.salary + emp.bonus;
         printf("\nSalary Report of %s:\n", emp.name);
         printf("Salary: $%.2f\n", emp.salary);
         printf("Bonus: $%.2f\n", emp.bonus);
-        printf("Total Salary: $%.2f\n", t);
+        printf("Total Salary: $%.2f\n", emp.total);
         // getch();
     }
