@@ -28,11 +28,11 @@ void main()
         scanf("%s",s[i].name);
         printf("Enter the Register number: ");
         scanf("%d",&s[i].reg_no);
-        printf("Enter marks in Physics: ");
+        printf("Enter marks of Physics: ");
         scanf("%f",&s[i].physics);
-        printf("Enter marks in Chemistry: ");
+        printf("Enter marks of Chemistry: ");
         scanf("%f",&s[i].chemistry);
-        printf("Enter marks in Maths: ");
+        printf("Enter marks of Maths: ");
         scanf("%f",&s[i].maths);
         s[i].total = s[i].physics + s[i].chemistry + s[i].maths;
         s[i].percen = s[i].total/3;
