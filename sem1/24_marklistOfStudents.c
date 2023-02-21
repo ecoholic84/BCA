@@ -35,7 +35,7 @@ void main()
         printf("Enter marks of Maths: ");
         scanf("%f",&s[i].maths);
         s[i].total = s[i].physics + s[i].chemistry + s[i].maths;
-        s[i].percen = s[i].total/3;
+        s[i].percen = s[i].total/300*100;
     }
 
     printf("Marklist:\n");

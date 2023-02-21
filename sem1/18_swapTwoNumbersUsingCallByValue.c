@@ -7,8 +7,8 @@ void main()
     // clrscr();
     printf("Enter two numbers: ");
     scanf("%d%d",&a,&b);
-    printf("Before swapping: ");
-    printf("a = %d, b= %d\n",a,b);
+    printf("Before Swapping: ");
+    printf("a = %d, b = %d\n",a,b);
     swap(a,b);
     // getch();
 }
