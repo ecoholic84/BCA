@@ -1,44 +1,55 @@
 #include <stdio.h>
 // #include <conio.h>
-void main()
+void sort(int *a, int n)
 {
-    int a[10], n, j, i, t;
-    int *p, *b[10];
+    int i, j, temp;
+    for (i = 0; i < n-1; i++)
+    {
+        for (j = i+1; j < n; j++)
+        {
+            if (*(a+i) > *(a+j))
+            {
+                temp = *(a+i);
+                *(a+i) = *(a+j);
+                *(a+j) = temp;
+            }
+        }
+    }
+}
+
+int main()
+{
+    int num;
     // clrscr();
+
     printf("Enter the limit: ");
-    scanf("%d",&n);
-    *p = &n;
+    scanf("%d",&num);
+
+    int a[num];
 
     printf("Enter array elements: ");
-    for(i=0; i<n; i++)
+    for(int i = 0; i<num; i++)
     {
         scanf("%d",&a[i]);
     }
 
-
-    printf("\nBefore starting array is: ");
-    for(i=0; i<n; i++)
+    int n = sizeof(a)/sizeof(a[0]);
+    int i;
+    
+    printf("Original array: ");
+    for (int i = 0; i < n; i++)
     {
-        printf("%d\t",a[i]);
+        printf("%d ", *(a+i));
     }
-
-
-    for(i=0; i<(n-1); i++)
+    printf("\n");
+    
+    sort(a, n);
+    
+    printf("Sorted array: ");
+    for (int i = 0; i < n; i++)
     {
-        for(j=i+1; j<n; j++)
-        {
-            if(a[i]>a[j])
-            {
-                t=a[i];
-                a[i]=a[j];
-                a[j]=t;
-            }
-        }
+        printf("%d ", *(a+i));
     }
-    printf ("\nAfter sorting array");
-    for(i=0; i<n; i++)
-    {
-        printf("%d\t",a[i]);
-    }
-  // getch();
+    printf("\n");
+    // getch();
 }
