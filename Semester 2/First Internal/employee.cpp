@@ -1,10 +1,10 @@
-#include <iostream>
-using namespace std;
+#include <iostream.h>
+#include <conio.h>
 
 class Employee
 {
    public:
-      string name;
+      char name[20];
       int id;
       double salary;
       void getdata();
@@ -14,7 +14,7 @@ class Employee
 void Employee::getdata()
 {
    cout << "Enter employee name: ";
-   getline(cin, name);
+   cin >> name;
 
    cout << "Enter employee ID: ";
    cin >> id;
@@ -26,17 +26,19 @@ void Employee::getdata()
 void Employee::display()
 {
    cout << "\nEmployee details\n";
-   cout << "Name: " << name << endl;
-   cout << "ID: " << id << endl;
-   cout << "Salary: $" << salary << endl;
+   cout << "Name: " << name;
+   cout << "\nID: " << id;
+   cout << "\nSalary: $" << salary;
 }
 
 int main()
 {
+   clrscr();
    Employee emp;
 
    emp.getdata();
    emp.display();
+   getch();
 
    return 0;
 }

@@ -1,21 +1,23 @@
-#include <iostream>
-using namespace std;
+#include <iostream.h>
+#include <conio.h>
 
-class Student {
+class Student
+{
    public:
-      string name;
+      char name[20];
       int roll_no;
-      double physics_marks;
-      double chemistry_marks;
-      double maths_marks;
-      double average_marks;
+      float physics_marks;
+      float chemistry_marks;
+      float maths_marks;
+      float average_marks;
       void getdata();
       void display();
 };
 
-void Student::getdata() {
+void Student::getdata()
+{
    cout << "Enter student name: ";
-   getline(cin, name);
+   cin >> name;
 
    cout << "Enter student roll number: ";
    cin >> roll_no;
@@ -32,21 +34,23 @@ void Student::getdata() {
    average_marks = (physics_marks + chemistry_marks + maths_marks) / 3.0;
 }
 
-void Student::display() {
+void Student::display()
+{
    cout << "\nStudent details\n";
-   cout << "Name: " << name << endl;
-   cout << "Roll No: " << roll_no << endl;
-   cout << "Physics Marks: " << physics_marks << endl;
-   cout << "Chemistry Marks: " << chemistry_marks << endl;
-   cout << "Maths Marks: " << maths_marks << endl;
-   cout << "Average Marks: " << average_marks << endl;
+   cout << "Name: " << name;
+   cout << "Roll No: " << roll_no;
+   cout << "Physics Marks: " << physics_marks;
+   cout << "Chemistry Marks: " << chemistry_marks;
+   cout << "Maths Marks: " << maths_marks;
+   cout << "Average Marks: " << average_marks;
 }
 
-int main() {
-   Student stu;
-
-   stu.getdata();
-   stu.display();
-
+int main()
+{
+   Student st;
+   clrscr();
+   st.getdata();
+   st.display();
+   getch();
    return 0;
 }
