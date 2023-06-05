@@ -1,5 +1,5 @@
 #include<stdio.h>
-// #include <codio.h>
+// #include <conio.h>
 void main()
 {
    int array[5],i;
