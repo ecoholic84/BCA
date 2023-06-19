@@ -3,6 +3,7 @@ Write a program to print the item code and cost using default arguments.
 */
 
 #include <iostream>
+// #include <conio.h>
 using namespace std;
 class item
 {
@@ -25,11 +26,13 @@ void item::putdata()
 int main()
 {
     item x,y;
+    // clrscr();
     x.getdata(185,298.52);
     y.getdata(300,43.78);
     cout<<"\nObject X"<<endl;
     x.putdata();
     cout<<"\nObject Y"<<endl;
     y.putdata();
+    // getch();
     return 0;
 }

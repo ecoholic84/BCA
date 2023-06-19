@@ -3,6 +3,7 @@ Program to illustrate inline function.
 */
 
 #include <iostream>
+// #include <conio.h>
 using namespace std;
 
 class volume
@@ -29,7 +30,9 @@ inline int volume::cube()
 int main()
 {
     volume v;
+    // clrscr();
     v.getdata();
     v.display();
+    // getch();
     return 0;
 }

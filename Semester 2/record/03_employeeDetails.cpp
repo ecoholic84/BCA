@@ -3,6 +3,7 @@ Write a program to print details of a employee.
 */
 
 #include <iostream>
+// #include <conio.h>
 using namespace std;
 
 class Employee
@@ -38,7 +39,9 @@ void Employee::display()
 int main()
 {
    Employee emp;
+   // clrscr();
    emp.getdata();
    emp.display();
+   // getch();
    return 0;
 }
