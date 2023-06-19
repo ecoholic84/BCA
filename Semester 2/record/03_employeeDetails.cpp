@@ -1,5 +1,9 @@
-#include <iostream.h>
-#include <conio.h>
+/*
+Write a program to print details of a employee.
+*/
+
+#include <iostream>
+using namespace std;
 
 class Employee
 {
@@ -33,12 +37,8 @@ void Employee::display()
 
 int main()
 {
-   clrscr();
    Employee emp;
-
    emp.getdata();
    emp.display();
-   getch();
-
    return 0;
 }

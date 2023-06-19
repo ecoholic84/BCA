@@ -1,5 +1,5 @@
 /*
-Write a program to print name, roll number, total marks of a student
+Write a program to print name, roll number, total marks of a student.
 */
 
 #include <iostream>

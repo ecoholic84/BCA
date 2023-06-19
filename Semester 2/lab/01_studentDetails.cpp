@@ -1,5 +1,5 @@
-#include <iostream.h>
-#include <conio.h>
+#include <iostream>
+using namespace std;
 
 class Student
 {
@@ -37,20 +37,18 @@ void Student::getdata()
 void Student::display()
 {
    cout << "\nStudent details\n";
-   cout << "Name: " << name;
-   cout << "Roll No: " << roll_no;
-   cout << "Physics Marks: " << physics_marks;
-   cout << "Chemistry Marks: " << chemistry_marks;
-   cout << "Maths Marks: " << maths_marks;
-   cout << "Average Marks: " << average_marks;
+   cout << "Name: " << name <<"\n";
+   cout << "Roll No: " << roll_no <<"\n";
+   cout << "Physics Marks: " << physics_marks <<"\n";
+   cout << "Chemistry Marks: " << chemistry_marks <<"\n";
+   cout << "Maths Marks: " << maths_marks <<"\n";
+   cout << "Average Marks: " << average_marks <<"\n";
 }
 
 int main()
 {
    Student st;
-   clrscr();
    st.getdata();
    st.display();
-   getch();
    return 0;
 }
