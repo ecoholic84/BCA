@@ -1,3 +1,7 @@
+/*
+Write a program to print name, roll no, total marks of student. 
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -5,11 +9,11 @@ class Student
 {
    public:
       char name[20];
-      int roll_no;
-      float physics_marks;
-      float chemistry_marks;
-      float maths_marks;
-      float average_marks;
+      int rl;
+      float m1;
+      float m2;
+      float m3;
+      float total;
       void getdata();
       void display();
 };
@@ -20,29 +24,29 @@ void Student::getdata()
    cin >> name;
 
    cout << "Enter student roll number: ";
-   cin >> roll_no;
+   cin >> rl;
 
    cout << "Enter marks in Physics: ";
-   cin >> physics_marks;
+   cin >> m1;
 
    cout << "Enter marks in Chemistry: ";
-   cin >> chemistry_marks;
+   cin >> m2;
 
    cout << "Enter marks in Maths: ";
-   cin >> maths_marks;
+   cin >> m3;
 
-   average_marks = (physics_marks + chemistry_marks + maths_marks) / 3.0;
+   total = (m1 + m2 + m3);
 }
 
 void Student::display()
 {
    cout << "\nStudent details\n";
    cout << "Name: " << name <<"\n";
-   cout << "Roll No: " << roll_no <<"\n";
-   cout << "Physics Marks: " << physics_marks <<"\n";
-   cout << "Chemistry Marks: " << chemistry_marks <<"\n";
-   cout << "Maths Marks: " << maths_marks <<"\n";
-   cout << "Average Marks: " << average_marks <<"\n";
+   cout << "Roll No: " << rl <<"\n";
+   cout << "Physics Marks: " << m1 <<"\n";
+   cout << "Chemistry Marks: " << m2 <<"\n";
+   cout << "Maths Marks: " << m3 <<"\n";
+   cout << "Total Marks: " << total <<"\n";
 }
 
 int main()

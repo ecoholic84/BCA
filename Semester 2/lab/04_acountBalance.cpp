@@ -1,3 +1,6 @@
+/*
+Write a program to display details of customer whose account balance is greater than 10000 (array of object).
+*/
 #include <iostream>
 using namespace std;
 

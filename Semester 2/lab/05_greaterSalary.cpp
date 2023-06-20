@@ -1,6 +1,6 @@
 /*
 Write a program to display,
-name, employee id and salary of emplyoees,
+name, employee id and salary of employees,
 whose salary is greater than 15000.
 */
 
