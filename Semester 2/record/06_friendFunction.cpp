@@ -1,5 +1,5 @@
 /*
-Find mean of numbers using friend function
+Find mean of numbers using friend function.
 */
 
 #include <iostream>
@@ -15,7 +15,6 @@ class Sample
         cin>>a;
         cout<<"Enter the second number: ";
         cin>>b;
-
     }
     friend float mean(Sample s);
 };
