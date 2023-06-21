@@ -1,7 +1,5 @@
-/*
- */
-
 #include <iostream>
+// #include <conio.h>
 using namespace std;
 class complex
 {
@@ -38,6 +36,7 @@ int main()
     complex A(2.7, 3.5);
     complex B(1.6);
     complex C;
+    // clrscr();
     C = sum(A, B);
     cout << "A=";
     A.show(A);
@@ -45,5 +44,6 @@ int main()
     B.show(B);
     cout << "C=";
     C.show(C);
+    // getch();
     return 0;
 }

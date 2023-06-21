@@ -1,26 +1,25 @@
 #include <iostream>
+// #include <conio.h>
 using namespace std;
 
 // Base class
 class Shape
 {
 protected:
-    int w;
-    int h;
+    int width;
+    int height;
 
 public:
-    void getWidth(int width)
+    void getWidth()
     {
-        cout<<"Enter width: ";
-        cin>>width;
-        w = width;
+        cout << "Enter width: ";
+        cin >> width;
     }
 
-    void getHeight(int height)
+    void getHeight()
     {
-        cout<<"Enter hieght: ";
-        cin>>height;
-        h = height;
+        cout << "Enter height: ";
+        cin >> height;
     }
 };
 
@@ -30,13 +29,14 @@ class Rectangle : public Shape
 public:
     int getArea()
     {
-        return w * h;
+        return width * height;
     }
 };
 
 int main()
 {
     Rectangle rect;
+    // clrscr();
 
     rect.getWidth();
     rect.getHeight();
@@ -44,5 +44,6 @@ int main()
     int area = rect.getArea();
     cout << "Area of the rectangle: " << area << endl;
 
+    // getch();
     return 0;
 }

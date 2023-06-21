@@ -1,4 +1,5 @@
 #include <iostream>
+// #include <conio.h>
 using namespace std;
 
 class Complex
@@ -36,6 +37,7 @@ void Complex::show()
 int main()
 {
     Complex A, B, C;
+    // clrscr();
 
     cout << "Enter values for Complex A:" << endl;
     A.input();
@@ -54,6 +56,6 @@ int main()
 
     cout << "C = ";
     C.show();
-
+    // getch();
     return 0;
 }
