@@ -9,7 +9,7 @@ protected:
 public:
     void getm()
     {
-        cout << "ENter M: ";
+        cout << "Enter M: ";
         cin >> m;
     }
 };

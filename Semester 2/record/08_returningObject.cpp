@@ -48,13 +48,13 @@ int main()
     C = A.sum(B);
 
     cout << "\nSum of Complex numbers:" << endl;
-    cout << "A = ";
+    cout << "A: ";
     A.show();
 
-    cout << "B = ";
+    cout << "B: ";
     B.show();
 
-    cout << "C = ";
+    cout << "C: ";
     C.show();
     // getch();
     return 0;
