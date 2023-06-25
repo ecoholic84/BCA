@@ -1,7 +1,6 @@
 #include <iostream>
-// #include <conio.h>
-
 using namespace std;
+
 class Student
 {
 protected:
@@ -75,11 +74,9 @@ public:
 int main()
 {
     Result stud1;
-    // clrscr();
     stud1.getnum();
     stud1.getmark();
     stud1.getscore();
     stud1.display();
-    // getch();
     return 0;
 }

@@ -3,7 +3,6 @@ Find mean of numbers using friend function.
 */
 
 #include <iostream>
-// #include <conio.h>
 using namespace std;
 
 class Sample
@@ -27,9 +26,7 @@ float mean(Sample s)
 int main()
 {
     Sample x;
-    // clrscr();
     x.setvalue();
     cout<<"Mean: "<<mean(x)<<"\n";
-    // getch();
     return 0;
 }

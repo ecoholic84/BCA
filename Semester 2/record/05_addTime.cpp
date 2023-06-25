@@ -3,7 +3,6 @@ Program to perform addition of time by passing objects as arguments.
 */
 
 #include <iostream>
-// #include <conio.h>
 using namespace std;
 
 class Time
@@ -37,7 +36,6 @@ void Time::sum(Time t1, Time t2)
 int main()
 {
     Time t1, t2, t3;
-    // clrscr();
     cout<<"Time 1: "<<endl;
     t1.getTime();
     cout<<"Time 2: "<<endl;
@@ -45,6 +43,5 @@ int main()
     t3.sum(t1, t2);
     cout<<"\nSum: "<<endl;
     t3.putTime();
-    // getch();
     return 0;
 }

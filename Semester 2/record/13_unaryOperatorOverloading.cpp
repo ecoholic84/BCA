@@ -1,8 +1,7 @@
 #include <iostream>
-// #include <conio.h>
 using namespace std;
 
-class space
+class Space
 {
     int x;
     int y;
@@ -13,9 +12,8 @@ class space
      void operator-();
 };
 
-void space::get()
+void Space::get()
 {
-    
     cout<<"Enter x: ";
     cin>>x;
     
@@ -23,11 +21,10 @@ void space::get()
     cin>>y;
     
     cout<<"Enter z: ";
-    cin>>z;
-   
+    cin>>z; 
 }
 
-void space::put()
+void Space::put()
 {
     cout<<"x: "<<x<<"\n";
     
@@ -36,7 +33,7 @@ void space::put()
     cout<<"z: "<<z<<"\n";
 }
 
-void space::operator-()
+void Space::operator-()
 {
     x=-x;
     y=-y;
@@ -45,13 +42,11 @@ void space::operator-()
 
 int main()
 {
-    space m;
-    // clrscr();
+    Space m;
     m.get();
     m.put();
     cout<<"\nOverloaded : "<<"\n";
     -m;
     m.put();
-    // getch();
-    return(0);
+    return 0;
 }

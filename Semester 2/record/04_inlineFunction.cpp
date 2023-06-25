@@ -3,10 +3,9 @@ Program to illustrate inline function.
 */
 
 #include <iostream>
-// #include <conio.h>
 using namespace std;
 
-class volume
+class Volume
 {
     int a;
     public:
@@ -22,17 +21,15 @@ class volume
     int cube();
 };
 
-inline int volume::cube()
+inline int Volume::cube()
 {
     return(a*a*a);
 }
 
 int main()
 {
-    volume v;
-    // clrscr();
+    Volume v;
     v.getdata();
     v.display();
-    // getch();
     return 0;
 }

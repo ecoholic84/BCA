@@ -1,6 +1,6 @@
 #include <iostream>
-// #include <conio.h>
 using namespace std;
+
 class M
 {
 protected:
@@ -38,10 +38,8 @@ public:
 int main()
 {
     P p;
-    // clrscr();
     p.getm();
     p.getn();
     p.display();
-    // getch();
     return 0;
 }

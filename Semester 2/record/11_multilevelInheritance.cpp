@@ -1,6 +1,6 @@
 #include <iostream>
-// #include <conio.h>
 using namespace std;
+
 class Student
 {
 protected:
@@ -51,13 +51,12 @@ public:
         cout << "Total: " << total << endl;
     }
 };
+
 int main()
 {
     Result stud1;
-    // clrscr();
     stud1.getnum();
     stud1.getmark();
     stud1.display();
-    // getch();
     return 0;
 }

@@ -1,8 +1,6 @@
 #include <iostream>
-// #include <conio.h>
 using namespace std;
 
-// Base class
 class Shape
 {
 protected:
@@ -23,7 +21,6 @@ public:
     }
 };
 
-// Derived class
 class Rectangle : public Shape
 {
 public:
@@ -36,7 +33,6 @@ public:
 int main()
 {
     Rectangle rect;
-    // clrscr();
 
     rect.getWidth();
     rect.getHeight();
@@ -44,6 +40,5 @@ int main()
     int area = rect.getArea();
     cout << "Area of the rectangle: " << area << endl;
 
-    // getch();
     return 0;
 }

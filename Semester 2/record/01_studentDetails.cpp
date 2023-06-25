@@ -3,9 +3,9 @@ Write a program to print name, roll number, total marks of a student.
 */
 
 #include <iostream>
-// #include <conio.h>
 using namespace std;
-class student
+
+class Student
 {
     char name[20];
     int rl;
@@ -15,7 +15,7 @@ class student
     void putdata();
 };
 
-void student::getdata()
+void Student::getdata()
 {
     cout<<"Enter student name: ";
     cin>>name;
@@ -29,7 +29,7 @@ void student::getdata()
     cin>>m3;
 }
 
-void student::putdata()
+void Student::putdata()
 {
     cout<<"\nStudent Details\n";
     cout<<"Name: "<<name<<endl;
@@ -42,10 +42,8 @@ void student::putdata()
 
 int main()
 {
-    student std;
-    // clrscr();
+    Student std;
     std.getdata();
     std.putdata();
-    // getch();
     return 0;
 }
